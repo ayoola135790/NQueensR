@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+
 public class RecursiveProgram {
     public static boolean isSafe(char[][] board, int row, int col){
     int n = board.length;
@@ -68,10 +69,10 @@ List <List<String>> solutions = new ArrayList<>();
     list));
     Collections.sort(solutions, listComparator);
     for(List<String> solution : solutions){
-    for(String row : solution){
-        System.out.print(row);
-        }
-        System.out.println();
+        for(String row : solution){
+            System.out.print(row);
+            }
+            System.out.println();
         }
     }   
 }
